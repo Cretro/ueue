@@ -5,18 +5,17 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     background-image: url('https://wallpapers-clan.com/wp-content/uploads/2022/10/cinnamoroll-blue-pattern-wallpaper-scaled.jpg');
-    background-size: cover; /* Adjust if necessary */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: auto; /* Allow the image to maintain its original size */
+    background-repeat: repeat; /* Make the image repeat across the background */
+    background-position: top left; /* Set the starting position of the repeated image */
 }
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 375px) {
     body {
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-size: auto; /* Keep the repeating behavior for mobile as well */
+        background-repeat: repeat; /* Ensure the background repeats on smaller screens */
+        background-position: top left;
     }
 }
 
