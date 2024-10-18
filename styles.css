@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-image: url('https://wallpapers-clan.com/wp-content/uploads/2022/10/cinnamoroll-blue-pattern-wallpaper-scaled.jpg'); /* Set the background image */
+    background-size: cover; /* Ensure the background covers the entire body */
+    background-attachment: fixed; /* Fixed background for a nice effect */
+}
+
+/* Full-Screen Image Gallery */
+.image-gallery {
+    width: 100%;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center images */
+    overflow: hidden;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.image-slide {
+    height: 200px; /* Set a fixed height for the square images */
+    width: 200px; /* Set a fixed width to make it square */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px; /* Margin around each image */
+    border: 5px solid #fff; /* White frame around each image */
+    border-radius: 10px; /* Optional: rounded corners for the frame */
+}
+
+/* Content Section after the images */
+.container {
+    text-align: center;
+    background-color: rgba(123, 235, 255, 0.8); /* Change to rgba for transparency */
+    padding: 20px; /* Reduced padding */
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 85vw; /* Fluid width to adapt to smaller screens */
+    max-width: 375px; /* Cap it at a reasonable max width for larger screens */
+    margin: 0 auto;
+    margin-top: 30px; /* Adds space after the images */
+    margin-bottom: 50px; /* Extra space at the bottom */
+}
+
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 10px;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn.yes {
+    background-color: #28a745;
+    width: 45%;
+}
+
+.btn.no {
+    background-color: #dc3545;
+    width: 20%;
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Header Styles */
+.header-bar {
+    background-color: #007bff; /* Solid blue background */
+    text-align: center;
+    padding: 10px 0; /* Top and bottom padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    position: relative; /* Ensures it stays at the top */
+    z-index: 100; /* Places it above other elements */
+    display: flex;
+    align-items: center;
+}
+
+.header-bar h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5em; /* Adjust font size */
+    color: #fff; /* White text color for contrast */
+}
+
+.header-bar img {
+    height: 150px;
+    width: 150px;
+}
+
+/* Media query for iPhone SE or similar small screens */
+@media only screen and (max-width: 375px) {
+    .container {
+        width: 90vw; /* Use 90% of the screen width */
+        padding: 15px; /* Slightly reduce padding for smaller screens */
+        margin-top: 20px; /* Adjust top margin for better spacing */
+    }
+
+    h1, h2 {
+        font-size: 1.3em; /* Slightly smaller font size */
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+
+    .btn.no {
+        width: 25%;
+        padding: 5px;
+        font-size: 0.8em;
+    }
+}
