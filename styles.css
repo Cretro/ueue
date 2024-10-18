@@ -4,9 +4,9 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    background-image: url('https://wallpapers-clan.com/wp-content/uploads/2022/10/cinnamoroll-blue-pattern-wallpaper-scaled.jpg'); /* Set the background image */
-    background-size: cover; /* Ensure the background covers the entire body */
-    background-attachment: fixed; /* Fixed background for a nice effect */
+    background-image: url('https://wallpapers-clan.com/wp-content/uploads/2022/10/cinnamoroll-blue-pattern-wallpaper-scaled.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Full-Screen Image Gallery */
